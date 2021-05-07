@@ -13,13 +13,16 @@ body {
 }
 
 .episode-layout {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  min-width: 100vh;
 }
 
 .episode-box {
-  padding: 0.5rem;
+  min-width: 200px;
+  margin: 0.5rem;
+  width: calc(20% - 1rem);
 }
 
 .header {
@@ -30,4 +33,13 @@ body {
   padding: 0.5rem;
   position: sticky;
   top: 0;
+}
+
+.links {
+  padding: 0 2rem;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
 }

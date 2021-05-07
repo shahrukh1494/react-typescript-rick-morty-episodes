@@ -13,8 +13,12 @@ function App(props: any): JSX.Element {
           <p>Pick your favourite episode!!!</p>
         </div>
         <div>
-          <Link to="/">Home</Link>
-          <Link to="/faves">Favourite(s): {state.favourites.length}</Link>
+          <Link to="/">
+            <p className="links">Home </p>
+          </Link>
+          <Link to="/faves">
+            <p className="links">Favourite(s): {state.favourites.length}</p>
+          </Link>
         </div>
       </header>
       {props.children}
